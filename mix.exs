@@ -45,7 +45,7 @@ defmodule LucideLiveview.MixProject do
     [
       maintainers: ["Thomas Poumarède"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/votre-github/lucide_liveview"},
+      links: %{"GitHub" => "https://github.com/ThomasPoum/lucide_liveview"},
       files: ~w(lib assets mix.exs README.md LICENSE)
     ]
   end

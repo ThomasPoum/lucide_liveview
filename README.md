@@ -6,7 +6,7 @@
 
 - ✅ **Automatic installation** via `mix deps.get`
 - ✅ **No manual setup required**
-- ✅ **Direct integration into `core_components.ex`**
+- ✅ **Direct integration into** `core_components.ex`
 - ✅ **Fully compatible with TailwindCSS**
 
 
@@ -62,7 +62,7 @@ Once installed, you can use Lucide icons directly in your templates with the `<.
 ### Basic Example
 
 ```elixir
-<.icon name="lucid-home" class="w-6 h-6 text-gray-500" />
+<.icon name="lucid-house" class="w-6 h-6 text-gray-500" />
 ```
 
 This will render the home icon using Tailwind classes.
@@ -96,7 +96,7 @@ You can customize the size, color, and other attributes using Tailwind:
 To contribute or modify this package, clone the repository and install dependencies:
 
 ```sh
-git clone https://github.com/your-repo/lucide_liveview.git
+git clone https://github.com/ThomasPoum/lucide_liveview.git
 cd lucide_liveview
 mix deps.get
 ```
@@ -119,7 +119,7 @@ mix hex.publish
 ## 🔗 Links
 
 - Hex.pm: https://hex.pm/packages/lucide_liveview
-- GitHub: https://github.com/your-repo/lucide_liveview
+- GitHub: https://github.com/ThomasPoum/lucide_liveview
 
 ## 📄 License
 
