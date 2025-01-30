@@ -2,8 +2,6 @@
 
 <!-- MDOC -->
 
-**Lucide LiveView** is an Elixir package that integrates **Lucide Icons** into Phoenix LiveView applications.
-
 ## ✨ Features
 
 - ✅ **Automatic installation** via setup script
@@ -55,7 +53,7 @@ end
 
 ```sh
 mix deps.get
-node assets/setup.js
+node deps/lucide_liveview/assets/setup.js
 ```
 
 📌 That's it! The setup script will automatically:
@@ -111,15 +109,6 @@ For testing:
 
 ```sh
 mix test
-```
-
-## 📦 Publishing on Hex.pm
-
-To build and publish the package:
-
-```sh
-mix hex.build
-mix hex.publish
 ```
 
 ## 🔗 Links
