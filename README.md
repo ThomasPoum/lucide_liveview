@@ -1,6 +1,9 @@
+<!-- MDOC -->
+
 # Lucide LiveView
 
-<!-- MDOC -->
+We'd like to thank the amazing team behind [Lucide Icons](https://lucide.dev/) for their incredible work on making these beautiful icons available for free and open-source. Your contributions to the design community are truly remarkable! 
+The main goal of this package is to make **Lucide Icons** easily accessible to all Elixir and LiveView developers out there! 
 
 ## ✨ Features
 
@@ -113,11 +116,14 @@ mix test
 
 ## 🔗 Links
 
+- Lucide Icons: https://lucide.dev
 - Hex.pm: https://hex.pm/packages/lucide_liveview
 - GitHub: https://github.com/ThomasPoum/lucide_liveview
 
 ## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+Made with ❤️ by [ThomasPoum](https://github.com/ThomasPoum) for all Elixir and LiveView developers out there!
 
 <!-- MDOC -->
