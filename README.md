@@ -1,5 +1,7 @@
 # Lucide LiveView
 
+<!-- MDOC -->
+
 **Lucide LiveView** is an Elixir package that integrates **Lucide Icons** into Phoenix LiveView applications.
 
 ## ✨ Features
@@ -128,3 +130,5 @@ mix hex.publish
 ## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+<!-- MDOC -->

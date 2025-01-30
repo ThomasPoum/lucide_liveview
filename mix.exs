@@ -9,6 +9,7 @@ defmodule LucideLiveview.MixProject do
       start_permanent: Mix.env() == :prod,
       description: "Lucide Icons integration for Phoenix LiveView",
       package: package_info(),
+      deps: deps(),
       source_url: "https://github.com/ThomasPoum/lucide_liveview"
     ]
   end
@@ -20,12 +21,18 @@ defmodule LucideLiveview.MixProject do
     ]
   end
 
+  defp deps do
+    [
+      {:ex_doc, "~> 0.29.1", only: :dev, runtime: false}
+    ]
+  end
+
   defp package_info do
     [
       maintainers: ["Thomas Poumarède"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/ThomasPoum/lucide_liveview"},
-      files: ~w(lib assets mix.exs README.md LICENSE)
+      files: ~w(lib assets mix.exs README.md guides LICENSE)
     ]
   end
 end
