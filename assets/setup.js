@@ -52,15 +52,19 @@ function setupTailwind() {
             {
               lucid: ({ name, fullPath }) => {
                 const content = fs.readFileSync(fullPath).toString().replace(/\\r?\\n|\\r/g, '');
+                let size = theme("spacing.6")
                 return {
                   [\`--lucid-\${name}\`]: \`url('data:image/svg+xml;utf8,\${content}')\`,
-                  '-webkit-mask': 'var(--lucid-house)',
-                  'mask': 'var(--lucid-house)',
+                  '-webkit-mask': \`var(--lucid-\${name})\`,
+                  'mask': \`var(--lucid-\${name})\`,
+                  'mask-repeat': 'no-repeat',
+                  'mask-position': 'center',
+                  'mask-size': 'contain',
                   'background-color': 'currentColor',
                   'vertical-align': 'middle',
                   'display': 'inline-block',
-                  'width': theme('spacing.5'),
-                  'height': theme('spacing.5'),
+                  'width': size,
+                  'height': size,
                 };
               },
             },
@@ -103,7 +107,7 @@ function setupCoreComponents() {
   const newFunction = `
   def icon(%{name: "lucid-" <> _} = assigns) do
     ~H"""
-    <span id={@id} class={[@name, "relative", @class]} style={@style} title={@title} {@rest} />
+      <span class={[@name, @class]} />
     """
   end\n`;
 
