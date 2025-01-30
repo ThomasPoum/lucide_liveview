@@ -4,7 +4,7 @@
 
 ## ✨ Features
 
-- ✅ **Automatic installation** via `mix deps.get`
+- ✅ **Automatic installation** via setup script
 - ✅ **No manual setup required**
 - ✅ **Direct integration into** `core_components.ex`
 - ✅ **Fully compatible with TailwindCSS**
@@ -27,17 +27,19 @@ Before using **Lucide LiveView**, ensure that your project meets the following r
    Since Lucide icons are loaded from `node_modules/lucide-static/`, your project must have the **Phoenix asset pipeline** properly set up, including `assets/node_modules/`.
 
 5. **Node.js and npm Installed**  
-   The package depends on `lucide-static`, which is managed via `npm`. Ensure that **Node.js and npm are installed** before running `mix deps.get`.
+   The package depends on `lucide-static`, which is managed via `npm`. Ensure that **Node.js and npm are installed** before running the setup script.
 
 6. **A Working Phoenix Project**  
    This package is designed for **Phoenix 1.7+** applications. If you are using an older version, consider upgrading to benefit from **LiveView components and Tailwind integration**.
 
-📌 If your project meets these requirements, **simply follow installation instructions and Lucide LiveView will be ready to use!**
+📌 If your project meets these requirements, **follow the installation instructions below!**
 
 
 ## 🚀 Installation
 
-Lucide LiveView is available on **Hex.pm**. To install it, simply add the dependency to your `mix.exs` file:
+Lucide LiveView is available on **Hex.pm**. To install it:
+
+1. Add the dependency to your `mix.exs` file:
 
 ```elixir
 defp deps do
@@ -47,13 +49,17 @@ defp deps do
 end
 ```
 
-Then, run:
+2. Install dependencies and run the setup script:
 
 ```sh
 mix deps.get
+node assets/setup.js
 ```
 
-📌 That's it! No extra setup required.
+📌 That's it! The setup script will automatically:
+- Install `lucide-static` in your assets directory
+- Configure TailwindCSS for Lucide icons
+- Add Lucide icon support to your `core_components.ex`
 
 ## 🎨 Usage
 
@@ -80,8 +86,6 @@ You can customize the size, color, and other attributes using Tailwind:
 - The package automatically installs `lucide-static` in `assets/node_modules/`
 - The `<.icon>` component is automatically added to `core_components.ex`
 - TailwindCSS is automatically configured to use Lucide icons
-
-📌 No manual configuration needed!
 
 ## ⚙️ Compatibility
 
